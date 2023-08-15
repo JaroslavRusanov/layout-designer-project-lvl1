@@ -1,7 +1,47 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
+:root {
+  --white: #fff;
+  --white-transparent: #d7ccc0;
+  --light: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-color-obscure: #42413c;
+  --dark: #2a2626;
+  --dark-transparent: #908d8b;
+  --braun: #b09a81;
+  --blue: #1085c5;
+}
 
-  color: #fff;
+body {
+  color: #2A2626;
+
+  font: 16px/1.6em 'Open Sans', sans-serif;
+}
+
+h1 {
+  font: 72px / 1.2em 'Neucha', sans-serif;
+}
+
+h2 {
+  font: 60px / 1.2em 'Neucha', sans-serif;
+}
+
+h3 {
+  font: 34px / 1.2em 'Neucha', sans-serif;;
+}
+
+section {
+  width: 1100px;
+
+  text-align: center;
+
+  padding: 100px 0;
+}
+
+.section-1 {
+  background-color: var(--main-color);
+}
+
+.section-2 {
+  background-color: var(--main-color-obscure);
 }
