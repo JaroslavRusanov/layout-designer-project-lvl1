@@ -1,4 +1,4 @@
-/** CSS STYLE **/
+/** Atomic **/
 
 :root {
   --white: #fff;
@@ -38,10 +38,21 @@ section {
   padding: 100px 0;
 }
 
-.section-1 {
-  background-color: var(--main-color);
-}
+header::before {
+  position: absolute;
 
-.section-2 {
-  background-color: var(--main-color-obscure);
+  background-image: url("../projects-css-l1-cognitive-biases/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+
+  opacity: 0.9;
+} 
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
 }
