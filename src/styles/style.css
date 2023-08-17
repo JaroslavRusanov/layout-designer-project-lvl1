@@ -83,6 +83,23 @@ h3 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  flex-wrap: wrap;
+}
+
+.item-nav {
+
+  width: calc((100% / 3) - 20px);
+  height: 350px;
 }
 
 .gap-30 {
@@ -103,12 +120,32 @@ h3 {
   background-color: var(--main-color);
 }
 
+.background-color-dark {
+  background-color: var(--dark);
+}
+
 .color-main {
   color: var(--main-color);
 }
 
 .color-main-obscure {
   color: var(--main-color-obscure);
+}
+
+.color-light {
+  color: var(--light);
+}
+
+.card {
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: var(--main-color);
+}
+
+.card:hover > * {
+  color: var(--light);
 }
 
 /** Atomic-CSS **/
@@ -154,7 +191,28 @@ h3 {
 }
 
 .mg-b-370 {
-  margin-bottom: 270px;
+  margin-bottom: 370px;
+}
+
+.pad-24 {
+  padding: 24px;
+}
+
+.pad-top-100 {
+  padding: 100px;
+}
+
+.pad-b-40 {
+  padding-bottom: 40px;
+}
+
+.font-52 {
+  font-size: 52px;
+}
+
+.card-h2-font {
+  font: 64px/1 "Neucha", sans-serif;
+  color: var(--dark);
 }
 
 .text-center {
