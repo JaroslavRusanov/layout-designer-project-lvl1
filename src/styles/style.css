@@ -1,5 +1,4 @@
-/** Atomic-CSS **/
-
+/** Main **/
 :root {
   --white: #fff;
   --white-transparent: #d7ccc0;
@@ -44,6 +43,33 @@ h3 {
   font: 34px / 1.2em "Neucha", sans-serif;;
 }
 
+.all-section {
+  width: 1110px;
+
+  padding: 100px 0;
+}
+
+.background-img {
+  position: relative;
+ }
+ 
+ .background-img::before {
+   position: absolute;
+ 
+   width: 100%;
+   height: 100%;
+ 
+   background-image: url("/images/background.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   content: "";
+ 
+   opacity: 0.1;
+ }
+
+ /** Flex **/
+
 .container-column {
   display: flex;
 
@@ -58,55 +84,6 @@ h3 {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
- 
-.all-section {
-  width: 1110px;
-
-  padding: 100px 0;
-}
-
-.background-color-light {
-  background-color: var(--light);
-}
-
-.btn-1 background-color-main {
-  background-color: var(--main-color);
-}
-
-.background-img {
- position: relative;
-}
-
-
-.background-img::before {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url("/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  content: "";
-
-  opacity: 0.1;
-}
-
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
-.img-main {
-  height: 525px;
-
-  top: 55px;
-  right: -270px;
-}
 
 .gap-30 {
   gap: 30px;
@@ -115,22 +92,11 @@ h3 {
 .flex-equal {
   flex-basis: 50%;
 }
+ 
+/** Color **/
 
-.btn-1:hover {
-  cursor: pointer;
-}
-
-.btn-1 {
-  display: inline-block;
-
-  margin-top: 32px;
-  padding: 12px 24px;
-  font-weight: 700;
-
-  color: var(--white);
-  font-variant: small-caps;
-
-  text-decoration: none;
+.background-color-light {
+  background-color: var(--light);
 }
 
 .background-color-main {
@@ -145,6 +111,58 @@ h3 {
   color: var(--main-color-obscure);
 }
 
+/** Atomic-CSS **/
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.img-header {
+  height: 525px;
+
+  top: 55px;
+  right: -270px;
+}
+
+.btn-1:hover {
+  cursor: pointer;
+}
+
+.btn-1 {
+  display: inline-block;
+
+  margin-top: 32px;
+  padding: 12px 24px;
+
+  font-weight: 700;
+
+  color: var(--white);
+
+  text-decoration: none;
+}
+
 .mg-0 {
   margin: 0;
+}
+
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+.mg-b-370 {
+  margin-bottom: 270px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+
+  right: 95.5px;
 }
