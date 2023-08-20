@@ -91,8 +91,13 @@ h3 {
   flex-direction: row;
 
   justify-content: space-between;
-  align-items: baseline;
+}
 
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.flex-wrap{
   flex-wrap: wrap;
 }
 
@@ -124,6 +129,10 @@ h3 {
   background-color: var(--dark);
 }
 
+.background-color-brown {
+  background-color: var(--brown);
+}
+
 .color-main {
   color: var(--main-color);
 }
@@ -134,6 +143,10 @@ h3 {
 
 .color-light {
   color: var(--light);
+}
+
+.color-dark-transp {
+  color: var(--dark-transparent);
 }
 
 .card {
@@ -186,6 +199,10 @@ h3 {
   margin: 0;
 }
 
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+
 .mg-b-30 {
   margin-bottom: 30px;
 }
@@ -198,6 +215,10 @@ h3 {
   padding: 24px;
 }
 
+.pad-left-10 {
+  padding-left: 10px;
+}
+
 .pad-top-100 {
   padding: 100px;
 }
@@ -206,8 +227,24 @@ h3 {
   padding-bottom: 40px;
 }
 
+.pad-b-100 {
+  padding-bottom: 100px;
+}
+
+.font-Neucha-24 {
+  font: 24px/1.2 "Neucha", sans-serif;
+}
+
+.font-Neucha-36 {
+  font: 36px/1.2 "Neucha", sans-serif;
+}
+
 .font-52 {
   font-size: 52px;
+}
+
+.line-height {
+  line-height: 0.5em;
 }
 
 .card-h2-font {
@@ -223,4 +260,17 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 
   right: 95.5px;
+}
+
+.width-1110 {
+  width: 1110px;
+}
+
+.font-spec {
+  font: bold 16px/1.6 "OpenSans", sans-serif;
+  color: var(--light);
+}
+
+.img-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
