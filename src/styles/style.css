@@ -68,6 +68,9 @@ h3 {
    opacity: 0.1;
  }
 
+ .width-1110 {
+  width: 1110px;
+}
  /** Flex **/
 
 .container-column {
@@ -121,6 +124,10 @@ h3 {
   background-color: var(--light);
 }
 
+.background-color-white {
+  background-color: var(--white);
+}
+
 .background-color-main {
   background-color: var(--main-color);
 }
@@ -145,8 +152,20 @@ h3 {
   color: var(--light);
 }
 
+.color-light-transp {
+  color: var(--white-transparent);
+}
+
+.color-white {
+  color: var(--white);
+}
+
 .color-dark-transp {
   color: var(--dark-transparent);
+}
+
+.color-brown {
+  color: var(--brown);
 }
 
 .card {
@@ -243,6 +262,10 @@ h3 {
   font-size: 52px;
 }
 
+.font-OS-16 {
+  font: bold 16px/1.6 "OpenSans", sans-serif;
+}
+
 .line-height {
   line-height: 0.5em;
 }
@@ -262,15 +285,10 @@ h3 {
   right: 95.5px;
 }
 
-.width-1110 {
-  width: 1110px;
-}
-
-.font-spec {
-  font: bold 16px/1.6 "OpenSans", sans-serif;
-  color: var(--light);
-}
-
 .img-shadow {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.vert-aligne-mid {
+  vertical-align: middle;
 }
