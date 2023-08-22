@@ -21,6 +21,8 @@
   src: url(../font/Neucha-Regular.ttf);
 }
 
+::-webkit-input-placeholder { color: var(--white-transparent); font-family: "OpenSans";}
+
 * {
   box-sizing: border-box;
 }
@@ -100,7 +102,7 @@ h3 {
   align-items: baseline;
 }
 
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
 
@@ -114,8 +116,16 @@ h3 {
   gap: 30px;
 }
 
-.flex-equal {
+.flex-b-50 {
   flex-basis: 50%;
+}
+
+.flex-gr-1 {
+  flex-grow: 1;
+}
+
+.flex-gr-0 {
+  flex-grow: 0;
 }
  
 /** Color **/
@@ -160,6 +170,10 @@ h3 {
   color: var(--white);
 }
 
+.color-white-transp{
+  color: var(--white-transparent);
+}
+
 .color-dark-transp {
   color: var(--dark-transparent);
 }
@@ -180,39 +194,7 @@ h3 {
   color: var(--light);
 }
 
-/** Atomic-CSS **/
-
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
-.img-header {
-  height: 525px;
-
-  top: 55px;
-  right: -270px;
-}
-
-.btn-1:hover {
-  cursor: pointer;
-}
-
-.btn-1 {
-  display: inline-block;
-
-  margin-top: 32px;
-  padding: 12px 24px;
-
-  font-weight: 700;
-
-  color: var(--white);
-
-  text-decoration: none;
-}
+/** Indents **/
 
 .mg-0 {
   margin: 0;
@@ -230,16 +212,31 @@ h3 {
   margin-bottom: 370px;
 }
 
+.border-0 {
+  border: 0;
+}
+
+.pad-15 {
+  padding: 15px;
+}
+
 .pad-24 {
   padding: 24px;
+}
+.pad-24-36 {
+  padding: 24px 36px;
 }
 
 .pad-left-10 {
   padding-left: 10px;
 }
 
+.pad-top-60 {
+  padding-top: 60px;
+}
+
 .pad-top-100 {
-  padding: 100px;
+  padding-top: 100px;
 }
 
 .pad-b-40 {
@@ -250,11 +247,21 @@ h3 {
   padding-bottom: 100px;
 }
 
+/** Fonts **/
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
 .font-Neucha-24 {
   font: 24px/1.2 "Neucha", sans-serif;
 }
 
-.font-Neucha-36 {
+.font-Neucha-34 {
   font: 34px/1.2 "Neucha", sans-serif;
 }
 
@@ -279,6 +286,31 @@ h3 {
   text-align: center;
 }
 
+/** Atomic CSS **/
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.height-50 {
+  height: 50px;
+}
+
+.width-70 {
+  width: 70px;
+}
+
+.img-header {
+  height: 525px;
+
+  top: 55px;
+  right: -270px;
+}
+
 .video {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 
@@ -291,4 +323,47 @@ h3 {
 
 .vert-aligne-mid {
   vertical-align: middle;
+}
+
+.btn-1 {
+  display: inline-block;
+
+  margin-top: 32px;
+  padding: 12px 24px;
+
+  font-weight: 700;
+
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+.btn-2 {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+
+  padding: 0;
+  border: 0;
+
+  background-color: var(--main-color);
+
+  vertical-align: middle;
+}
+
+.btn-2::before {
+  position: absolute;
+ 
+  width: 50%;
+  height: 50%;
+
+  top: 25%;
+  right: 25%;
+
+  background-image: url("../images/send.svg");
+  background-repeat: round;
+  background-size: cover;
+
+  content: "";
 }
