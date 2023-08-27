@@ -23,14 +23,14 @@
 
 ::-webkit-input-placeholder { color: var(--white-transparent); font-family: "OpenSans";}
 
-* {
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
+
   color: var(--dark);
 
   font: 16px/1.6em "OpenSans", sans-serif;
+
+  box-sizing: border-box;
 }
 
 h1 {
@@ -70,6 +70,10 @@ h3 {
    opacity: 0.1;
  }
 
+ .m-width-1440 {
+  width: 1440px;
+ }
+
  .width-1110 {
   width: 1110px;
 }
@@ -78,8 +82,8 @@ h3 {
 .container-column {
   display: flex;
 
- flex-direction: column;
- justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 
   align-items: center;
 }
@@ -87,7 +91,6 @@ h3 {
 .container-row-reverse {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
 
 }
 
@@ -95,25 +98,49 @@ h3 {
   display: flex;
   flex-direction: row;
 
-  justify-content: space-between;
 }
 
-.align-items-baseline {
-  align-items: baseline;
+.align-items-f-start{
+  align-items: flex-start;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.item-nav {
+.item-nav-1 {
+  max-width: 350px;
+  height: 323px;
+}
 
-  width: calc((100% / 3) - 20px);
-  height: 350px;
+.item-nav-2 {
+  max-width: calc(350px - 48px);
+  height: calc(323px - 48px);
+}
+
+.item-nav-3 {
+  max-width: calc(350px - 48px);
+  height: calc(348px - 48px);
+}
+
+.card {
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: var(--main-color);
+}
+
+.card:hover > * {
+  color: var(--light);
 }
 
 .gap-30 {
   gap: 30px;
+}
+
+.r-gap-20 {
+  row-gap: 20px;
 }
 
 .flex-b-50 {
@@ -174,6 +201,10 @@ h3 {
   color: var(--white-transparent);
 }
 
+.color-dark {
+  color: var(--dark);
+}
+
 .color-dark-transp {
   color: var(--dark-transparent);
 }
@@ -182,22 +213,14 @@ h3 {
   color: var(--brown);
 }
 
-.card {
-  text-decoration: none;
-}
-
-.card:hover {
-  background-color: var(--main-color);
-}
-
-.card:hover > * {
-  color: var(--light);
-}
-
 /** Indents **/
 
 .mg-0 {
   margin: 0;
+}
+
+.mg-16 {
+  margin: 16px;
 }
 
 .mg-b-20 {
@@ -209,11 +232,15 @@ h3 {
 }
 
 .mg-b-370 {
-  margin-bottom: 370px;
+  margin-bottom: 368px;
 }
 
 .border-0 {
   border: 0;
+}
+
+.pad-0 {
+  padding: 0;
 }
 
 .pad-15 {
