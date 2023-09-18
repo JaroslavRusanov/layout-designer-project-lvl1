@@ -88,13 +88,6 @@ h3 {
   align-items: center;
 }
 
-.container-column-start {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .container-row-reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -362,7 +355,7 @@ h3 {
 .btn-1 {
   display: inline-block;
 
-  margin-top: 24px;
+  margin-top: 20px;
   padding: 12px 24px;
 
   font-weight: 700;
