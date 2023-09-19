@@ -21,6 +21,10 @@
   src: url(../font/Neucha-Regular.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ::-webkit-input-placeholder { color: var(--white-transparent); font-family: "OpenSans";}
 
 body {
@@ -77,6 +81,11 @@ h3 {
  .width-1110 {
   width: 1110px;
 }
+
+.content-box {
+  box-sizing: content-box;
+}
+
  /** Flex **/
 
 .container-column {
