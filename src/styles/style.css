@@ -21,10 +21,6 @@
   src: url(../font/Neucha-Regular.ttf);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 ::-webkit-input-placeholder { color: var(--white-transparent); font-family: "OpenSans";}
 
 body {
@@ -33,8 +29,6 @@ body {
   color: var(--dark);
 
   font: 16px/1.6em "OpenSans", sans-serif;
-
-  box-sizing: border-box;
 }
 
 h1 {
@@ -263,8 +257,8 @@ h3 {
 .pad-24 {
   padding: 24px;
 }
-.pad-24-36 {
-  padding: 24px 36px;
+.pad-24-42 {
+  padding: 24px 42px;
 }
 
 .pad-left-10 {
