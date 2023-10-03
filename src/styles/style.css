@@ -46,7 +46,7 @@ h3 {
 .all-section {
   width: 1110px;
 
-  padding: 100px 0;
+  padding: 102px 0;
 }
 
 .background-img {
@@ -86,7 +86,6 @@ h3 {
   display: flex;
 
   flex-direction: column;
-  justify-content: space-between;
 
   align-items: center;
 }
