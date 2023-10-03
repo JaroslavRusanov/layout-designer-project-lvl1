@@ -47,7 +47,7 @@ h3 {
 .all-section {
   width: 1110px;
 
-  padding: 104px 0;
+  padding: 100px 0;
 }
 
 .background-img {
@@ -226,8 +226,20 @@ h3 {
   margin: 16px;
 }
 
+.mg-14 {
+  margin: 14px 0;
+}
+
+.mg-31 {
+margin: 31px 0;
+}
+
 .mg-b-20 {
   margin-bottom: 20px;
+}
+
+.mg-b-27 {
+  margin-bottom: 27px;
 }
 
 .mg-b-30 {
