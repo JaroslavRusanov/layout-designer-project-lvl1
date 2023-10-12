@@ -96,7 +96,6 @@ h3 {
 .container-row-reverse {
   display: flex;
   flex-direction: row-reverse;
-
 }
 
 .container-row {
