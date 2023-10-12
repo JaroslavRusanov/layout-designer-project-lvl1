@@ -87,6 +87,12 @@ h3 {
   align-items: center;
 }
 
+.container-column-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .container-row-reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -226,12 +232,16 @@ h3 {
   margin: 16px;
 }
 
-.mg-14 {
-  margin: 14px 0;
+.mg-b-14 {
+  margin:0 0 14px;
 }
 
 .mg-31 {
 margin: 31px 0;
+}
+
+.mg-b-16 {
+  margin-bottom: 16px;
 }
 
 .mg-b-20 {
