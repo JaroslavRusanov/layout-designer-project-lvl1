@@ -47,8 +47,7 @@ h3 {
 .all-section {
   width: 1110px;
 
-  padding-top: 100px;
-  padding-bottom: 106px;
+  padding: 100px 0;
 }
 
 .background-img {
@@ -84,7 +83,7 @@ h3 {
   display: flex;
 
   flex-direction: column;
-
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -292,7 +291,7 @@ margin: 31px 0;
 }
 
 .pad-b-100 {
-  padding-bottom: 106px;
+  padding-bottom: 100px;
 }
 
 /** Fonts **/
