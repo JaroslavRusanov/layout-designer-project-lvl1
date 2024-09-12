@@ -13,15 +13,15 @@
 
 @font-face {
   font-family: OpenSans;
-  src: url(../font/OpenSans.ttf);
+  src: url("../font/OpenSans.ttf");
 }
 
 @font-face {
   font-family: Neucha;
-  src: url(../font/Neucha-Regular.ttf);
+  src: url("../font/Neucha-Regular.ttf");
 }
 
-::-webkit-input-placeholder { color: var(--white-transparent); font-family: "OpenSans";}
+::-webkit-input-placeholder { color: var(--white-transparent); font-family: OpenSans;}
 
 body {
   box-sizing: border-box;
@@ -29,19 +29,19 @@ body {
 
   color: var(--dark);
 
-  font: 16px/1.56em "OpenSans", sans-serif;
+  font: 16px/1.56em OpenSans, sans-serif;
 }
 
 h1 {
-  font: 72px / 1.2em "Neucha", sans-serif;
+  font: 72px / 1.2em Neucha, sans-serif;
 }
 
 h2 {
-  font: 60px / 1.2em "Neucha", sans-serif;
+  font: 60px / 1.2em Neucha, sans-serif;
 }
 
 h3 {
-  font: 34px / 1.2em "Neucha", sans-serif;
+  font: 34px / 1.2em Neucha, sans-serif;
 }
 
 .all-section {
@@ -226,7 +226,7 @@ h3 {
 }
 
 .mg-vert-30 {
-  margin: 30px 0 30px;
+  margin: 30px 0;
 }
 
 .mg-16 {
@@ -323,20 +323,20 @@ margin: 31px 0;
   font-size: 14px;
 }
 
-.font-Neucha-24 {
-  font: 24px/1.2 "Neucha", sans-serif;
+.font-neucha-24 {
+  font: 24px/1.2 Neucha, sans-serif;
 }
 
-.font-Neucha-34 {
-  font: 34px/1.2 "Neucha", sans-serif;
+.font-neucha-34 {
+  font: 34px/1.2 Neucha, sans-serif;
 }
 
 .font-52 {
   font-size: 52px;
 }
 
-.font-OS-14 {
-  font: bold 14px/1.6 "OpenSans", sans-serif;
+.font-os-14 {
+  font: bold 14px/1.6 OpenSans, sans-serif;
   text-transform: uppercase;
 }
 
@@ -345,7 +345,7 @@ margin: 31px 0;
 }
 
 .card-h2-font {
-  font: 64px/1 "Neucha", sans-serif;
+  font: 64px/1 Neucha, sans-serif;
   color: var(--dark);
 }
 
