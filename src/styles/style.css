@@ -91,6 +91,11 @@ h3 {
   align-items: center;
 }
 
+.col {
+  justify-content: center;
+  align-items: center;
+}
+
 .container-row-reverse {
   display: flex;
   flex-direction: row-reverse;
