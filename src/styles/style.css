@@ -71,7 +71,7 @@ h3 {
   content: "";
 
   opacity: 0.1;
- }
+}
 
 .width-1110 {
   width: 1110px;
@@ -106,7 +106,7 @@ h3 {
   flex-direction: row;
 }
 
-.align-items-f-start{
+.align-items-f-start {
   align-items: flex-start;
 }
 
@@ -160,7 +160,7 @@ h3 {
 .flex-gr-0 {
   flex-grow: 0;
 }
- 
+
 /** Color **/
 
 .background-color-light {
