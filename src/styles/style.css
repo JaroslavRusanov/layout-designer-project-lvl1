@@ -21,8 +21,6 @@
   src: url("../font/Neucha-Regular.ttf");
 }
 
-::-webkit-input-placeholder { color: var(--white-transparent); font-family: OpenSans;}
-
 #navigation {
   margin-top: -200px;
 }
@@ -78,11 +76,12 @@ h3 {
 .width-1110 {
   width: 1110px;
 }
+
 .max-width-1440 {
   max-width: 1440px;
 }
 
- /** Flex **/
+/** Flex **/
 
 .container {
   display: flex;
@@ -105,7 +104,6 @@ h3 {
 .container-row {
   display: flex;
   flex-direction: row;
-
 }
 
 .align-items-f-start{
@@ -209,7 +207,7 @@ h3 {
   color: var(--white);
 }
 
-.color-white-transp{
+.color-white-transp {
   color: var(--white-transparent);
 }
 
@@ -252,11 +250,11 @@ h3 {
 }
 
 .mg-b-14 {
-  margin-bottom:14px;
+  margin-bottom: 14px;
 }
 
 .mg-31 {
-margin: 31px 0;
+  margin: 31px 0;
 }
 
 .mg-b-10 {
@@ -323,7 +321,7 @@ margin: 31px 0;
   padding-bottom: 40px;
 }
 
-.pad-b-100 {  
+.pad-b-100 {
   padding-bottom: 100px;
 }
 
@@ -411,7 +409,7 @@ margin: 31px 0;
 .btn-1 {
   display: inline-block;
 
-  padding: 11px 23px 12px 24px  ;
+  padding: 11px 23px 12px 24px;
 
   font-weight: 700;
   text-transform: uppercase;
@@ -437,7 +435,7 @@ margin: 31px 0;
 
 .btn-2::before {
   position: absolute;
- 
+
   width: 50%;
   height: 50%;
 
