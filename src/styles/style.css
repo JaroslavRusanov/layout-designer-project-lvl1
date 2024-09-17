@@ -31,7 +31,8 @@ body {
   box-sizing: border-box;
   margin: 0;
 
-  width: auto;
+  min-width: 1440px;
+
   color: var(--dark);
 
   font: 16px/1.56em OpenSans, sans-serif;
@@ -84,7 +85,8 @@ h3 {
  /** Flex **/
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-column {
@@ -388,6 +390,10 @@ margin: 31px 0;
 
   top: 55px;
   right: -270px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .video {
