@@ -29,8 +29,6 @@ body {
   box-sizing: border-box;
   margin: 0;
 
-  min-width: 1440px;
-
   color: var(--dark);
 
   font: 16px/1.56em OpenSans, sans-serif;
@@ -48,10 +46,11 @@ h3 {
   font: 34px / 1.2em Neucha, sans-serif;
 }
 
-.all-section {
+.container {
   width: 1110px;
-
+  margin: auto;
   padding: 100px 0;
+  z-index: 1;
 }
 
 .background-img {
@@ -70,7 +69,37 @@ h3 {
 
   content: "";
 
+  z-index: 0;
+
   opacity: 0.1;
+}
+
+.img-header {
+  height: 525px;
+
+  top: 55px;
+  right: -270px;
+  z-index: -1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.img-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.vert-aligne-mid {
+  vertical-align: middle;
+}
+
+.width-70 {
+  width: 70px;
 }
 
 .width-1110 {
@@ -83,27 +112,23 @@ h3 {
 
 /** Flex **/
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .container-column {
   display: flex;
-
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .container-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items-unset {
+ align-items: unset; 
 }
 
 .align-items-f-start {
@@ -225,6 +250,10 @@ h3 {
 
 /** Indents **/
 
+.margin-auto {
+  margin: auto;
+}
+
 .mg-0 {
   margin: 0;
 }
@@ -275,6 +304,10 @@ h3 {
 
 .mg-b-40 {
   margin-bottom: 40px;
+}
+
+.mg-b-45 {
+  margin-bottom: 45px;
 }
 
 .mg-t-negative {
@@ -379,34 +412,7 @@ h3 {
   position: absolute;
 }
 
-.width-70 {
-  width: 70px;
-}
-
-.img-header {
-  height: 525px;
-
-  top: 55px;
-  right: -270px;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.video {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-}
-
-.img-shadow {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-}
-
-.vert-aligne-mid {
-  vertical-align: middle;
-}
-
-.btn-1 {
+.btn-header {
   display: inline-block;
 
   padding: 11px 23px 12px 24px;
@@ -419,9 +425,10 @@ h3 {
   text-decoration: none;
 }
 
-.btn-2 {
-  position: relative;
-
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 50px;
 
@@ -433,14 +440,9 @@ h3 {
   vertical-align: middle;
 }
 
-.btn-2::before {
-  position: absolute;
-
-  width: 50%;
-  height: 50%;
-
-  top: 25%;
-  right: 25%;
+.btn-footer::before {
+  width: 35px;
+  height: 25px;
 
   background-image: url("../assets/images/send.svg");
   background-repeat: round;

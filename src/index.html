@@ -9,26 +9,26 @@
 </head>
 <body>
     <header class="container-column background-color-light background-img overflow-hidden">
-        <div class="all-section position-relative">
+        <div class="container position-relative">
             <h1 class="color-main mg-0">Когнитивные<br>искажения<br><span class="color-main-obscure">в программировании</span></h1>
             <img src="assets/images/main.png" alt="Tota with comp" class="position-absolute img-header">
         </div>
-        <div class="all-section container-row-reverse gap-30">
-            <div class="flex-b-50">
-                <p class="mg-t-0">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
-                <p class="mg-t-0 mg-b-40">Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-                <a class="btn-1 background-color-main mg-t-5" href="#navigation">подробнее</a>
-            </div>
+        <div class="container container-row gap-30">
             <div class="flex-b-50">
                 <p class="mg-t-0">Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
+            </div>
+            <div class="flex-b-50">
+                <p class="mg-t-0">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
+                <p class="mg-t-0 mg-b-45">Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
+                <a class="btn-header background-color-main" href="#navigation">подробнее</a>
             </div>
         </div>
     </header>
 
     <main class="background-color-white">
-        <section id="preview-image" class="container-column">
+        <section id="preview-image" class="container-column flex-center">
             <div class="width-1110 pad-top-100">
-                <div class="container-column">
+                <div class="container-column flex-center">
                     <h2 class="color-main text-center color-main-obscure mg-t-0 mg-b-30">Что же это такое,<br>
                     <span class="color-main">когнитивные искажения?</span></h2>
                     <p class="mg-t-0 mg-b-30">Что такое когнитивные искажения. Petrovna Channel</p>
@@ -40,7 +40,7 @@
         </section>
 
         <section id="navigation" class="container-column background-color-obscure">
-            <div class="all-section pad-b-100">
+            <div class="container pad-b-100">
                 <div class="mg-t-100">
                     <div class="container-row align-items-f-start gap-30 r-gap-20 flex-wrap">
                         <div class="color-main item-nav-1">
@@ -78,7 +78,7 @@
         </section>
 
         <section id="ikea-effect" class="container-column background-color-light background-img">
-            <div class="all-section">
+            <div class="container">
                 <div class="container-row gap-30 pad-b-100">
                     <img src="./assets/images/1.png" alt="Two Totas and comp" class="flex-b-50 img-shadow vert-aligne-mid">
                     <div class="flex-b-50">
@@ -98,7 +98,7 @@
         </section>
 
         <section id="premature-optimization" class="container-column background-color-brown background-img">
-            <div class="all-section">
+            <div class="container">
                 <div class="container-row gap-30 pad-b-100">
                     <div class="flex-b-50">
                         <p class="font-neucha-24 color-light-transp mg-0">Когнитивные искажения</p>
@@ -118,7 +118,7 @@
         </section>
 
         <section id="distortion-of-novelty" class="container-column background-color-light background-img">
-            <div class="all-section">
+            <div class="container">
                 <div class="container-row gap-30 pad-b-100">
                     <img src="./assets/images/3.png" alt="Tota and trash can" class="flex-b-50 position-relative img-shadow vert-aligne-mid">
                     <div class="flex-b-50">
@@ -138,7 +138,7 @@
         </section>
 
         <section id="hyperbolic-depreciation" class="container-column background-color-brown background-img">
-            <div class="all-section">
+            <div class="container">
                 <div class="container-row gap-30 pad-b-100">
                     <div class="flex-b-50">
                         <p class="font-neucha-24 color-light-transp mg-0">Когнитивные искажения</p>
@@ -158,7 +158,7 @@
         </section>
 
         <section id="errors-in-planning" class="container-column background-color-light background-img">
-            <div class="all-section">
+            <div class="container">
                 <div class="container-row gap-30 pad-b-100">
                     <img src="./assets/images/5.png" alt="Tota with task-list" class="flex-b-50 position-relative img-shadow vert-aligne-mid">
                     <div class="flex-b-50">
@@ -182,27 +182,31 @@
     </main>
 
     <footer class="container-column">
-        <div class="all-section">
+        <div class="container">
             <div class="container-row gap-30 background-color-obscure pad-24-55">
                 <div class="flex-b-50">
                     <p class="color-white font-neucha-34 mg-31">Хотите узнать больше?<br>Подпишитесь на обновления</p>
                 </div>
 
                 <div class="flex-b-50">
-                    <p class="color-white mg-b-10">Электронная почта</p>
-                    <form action="#" class="container-row">
-                        <label for="email"></label>
-                        <input id="email" placeholder="Ваша электронная почта" class="pad-15 border-0 flex-gr-1">
-                        <button class="btn-2 flex-gr-0"></button>
+                    <form action="#" class="container-column align-items-unset">
+                        <label for="email" class="color-white mg-b-10">Электронная почта</label>
+                        <div class="container-row">
+                            <input id="email" placeholder="Ваша электронная почта" class="pad-15 border-0 flex-gr-1">
+                            <button class="btn-footer flex-gr-0"></button>
+                        </div>
+                        <div class="color-white font-12 mg-0">Подписываясь, вы принимаете
+                            <a target="_blank" href="#" class="color-white-transp font-12"> правила сервиса</a>
+                        </div>
                     </form>
-                    <p class="color-white font-12 mg-0">Подписываясь, вы принимаете <a href="#" class="color-white-transp font-12">правила сервиса</a></p>
+
                 </div>
             </div>
         </div>
 
         <div class="pad-b-100 text-center font-14">
             <p class="text-center">© 2020 Константин Константинопольский</p>
-            <p class="text-center">По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Ranadive Cognitive Biases in Programming</a></p>
+            <p class="text-center">По материалам статьи <a target="_blank" href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Ranadive Cognitive Biases in Programming</a></p>
             <p class="text-center"><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
             <!-- <p class="text-center">Верстка первого учебного проекта <a href="https://ru.hexlet.io/u/ja-ru">Ярослав Русанов</a></p>**/ -->
 
